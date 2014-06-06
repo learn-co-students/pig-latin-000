@@ -1,12 +1,12 @@
 ---
-tags: ruby, strings, arrays, include?, split, join, enum, enumerable
-languages: ruby, rb
-resources: 2
+tags: string manipulation
+languages: ruby
+resources: 0
 ---
 
 ##Pig Latin Translator
 Larry Page just sent Flatiron School this email,
->Google is in desperate need for a Ruby Pig Latin Translator.  Google Translate might as well be a joke without it.  People are flooding to Bing and Alta Vista for all their Pig Latin needs.  We need a method called `to_pig_latin` that accepts a string as an argument.  Google Translate can translate whole paragraphs, so the method must be able to translate every word in a string into Pig Latin. However, there are a few words that are the same in Pig Latin as they are in English.  They are: I, me, to, too, a, an, in, and, and on.  In case you guys didn't know how Pig Latin works, words that begin with a consonant move all the consonants from before the first vowel to the end and add an 'ay', so 'happy' becomes 'appyhay' and 'glove' becomes 'oveglay'. For vowels all you need to do is add 'ay' to the end of the word, so 'egg' becomes 'eggay'.  We're gonna need that ASAP so we can allow our driverless cars to accept instructions in Pig Latin.
+>Google is in desperate need for a Ruby Pig Latin Translator.  Google Translate might as well be a joke without it.  People are flooding to Bing and Alta Vista for all their Pig Latin needs.  We need a method called `to_pig_latin` that accepts a string as an argument.  Google Translate can translate whole paragraphs, so the method must be able to translate every word in a string into Pig Latin. However, there are a few words that are the same in Pig Latin as they are in English.  They are: I, me, to, too, a, an, in, and, and on.  In case you guys didn't know how Pig Latin works, words that begin with a consonant move all the consonants from before the first vowel to the end and add an 'ay', so 'happy' becomes 'appyhay' and 'glove' becomes 'oveglay'. For vowels all you need to do is add 'ay' to the end of the word, so 'egg' becomes 'eggay'.  We're gonna need that ASAP, so we can allow our driverless cars to accept instructions in Pig Latin.
 <br>
 > xoxo Larry
 
@@ -20,21 +20,6 @@ To make this method for Mr. Page you're going to need to make a method that,
   - "glove" → "oveglay"
 - Translates words that start with vowels correctly
   - "egg" → "eggay"
-
-Some helpful methods would be,
-- [`include?`](http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-include-3F) which checks whether or not the argument is in the object
-  - works on strings and arrays
-  - `[ "a", "b", "c" ].include?("b")   #=> true`
-- [`split`](http://www.ruby-doc.org/core-2.1.2/String.html#method-i-split) which divides a string into pieces and returns an array of those pieces
-  - without an argument `split` divides a string by every white space
-    - `" now's  the time".split        #=> ["now's", "the", "time"]`
-  - with an argument `split` divides a string based on that argument
-    - `" this time".split("")   #=> [" ", "t", "h", "i", "s", " ", "t", "i", "m", "e"]`
-- [`join`](http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-join) which takes every item in an array and makes a string out of them
-  - without an argument `join` will create a string of every item next to one another
-    - `[ "a", "b", "c" ].join        #=> "abc"`
-  - with an argument `join` will space every item in the string with that argument between them
-    - `[ "a", "b", "c" ].join("-")   #=> "a-b-c"`
 
 
 Now that you're prepared
