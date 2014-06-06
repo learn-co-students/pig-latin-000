@@ -20,6 +20,6 @@ describe "to_pig_latin" do
   it "converts a whole sentence to correct pig latin" do
     normal_sentence = "larry page is a great dude"
     piglatinized_sentence = "arrylay agepay is a eatgray udeday"
-    expect(subject).to eql(value)
+    expect(normal_sentence).to eql(piglatinized_sentence)
   end
 end
