@@ -31,9 +31,9 @@ Some helpful methods would be,
     - ` " now's  the time".split("")   #=> [" ", "n", "o", "w", "'", "s", " ", " ", "t", "h", "e", " ", "t", "i", "m", "e"]`
 - [`join`](http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-join) which takes every item in an array and makes a string out of them
   - without an argument `join` will create a string of every item next to one another
-    -`[ "a", "b", "c" ].join        #=> "abc"`
+    - `[ "a", "b", "c" ].join        #=> "abc"`
   - with an argument `join` will space every item in the string with that argument between them
-    -`[ "a", "b", "c" ].join("-")   #=> "a-b-c"`
+    - `[ "a", "b", "c" ].join("-")   #=> "a-b-c"`
 
 
 Now that you're prepared
