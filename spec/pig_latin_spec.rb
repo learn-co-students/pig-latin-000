@@ -6,7 +6,7 @@ describe "to_pig_latin" do
   end
 
   it "converts a word with many consonants in the begining to pig_latin" do
-    expect(to_pig_latin("mmmmmonkey")).to eql("onkeymmmmmay")
+    expect(to_pig_latin("scraper")).to eql("aperscray")
   end
 
   it "converts a word a vowel in the begining to pig_latin" do
@@ -19,7 +19,7 @@ describe "to_pig_latin" do
 
   it "converts a whole sentence to correct pig latin" do
     normal_sentence = "larry page is a great dude"
-    piglatinized_sentence = "arrylay agepay is a eatgray udeday"
-    expect(normal_sentence).to eql(piglatinized_sentence)
+    piglatinized_sentence = "arrylay agepay isay a eatgray udeday"
+    expect(to_pig_latin(normal_sentence)).to eql(piglatinized_sentence)
   end
 end
