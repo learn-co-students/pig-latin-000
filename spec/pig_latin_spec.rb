@@ -1,5 +1,3 @@
-require "spec_helper"
-
 describe "to_pig_latin" do
   it "converts a word with one consonant in the begining to pig_latin" do
     expect(to_pig_latin("happy")).to eql("appyhay")
