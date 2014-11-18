@@ -1,5 +1,5 @@
 ---
-tags: string manipulation, TODO
+tags: string manipulation, bonus
 languages: ruby
 resources: 0
 ---
